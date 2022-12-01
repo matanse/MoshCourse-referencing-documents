@@ -17,6 +17,13 @@ mongoose
 
 app.use("/", courses);
 
+//   TODO make a loop to get user input for an action: post, put, get, delete
+// const start = () => {
+//   let doAction = Boolean;
+
+//   while (doAction) {}
+// };
+
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Listening on port: ${port}...`);
