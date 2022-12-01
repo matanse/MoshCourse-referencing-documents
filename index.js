@@ -12,7 +12,7 @@ mongoose
   .connect(`mongodb://localhost/${mongodbCollection}`)
   .then(() => console.log(`Connect to Mongodb ${mongodbCollection}.`))
   .catch((err) => {
-    console.log(`ERROR: ${err}`);
+    console.log(`\n Could not connect to mongoDB... \n ERROR: ${err}`);
   });
 
 app.use("/", courses);
